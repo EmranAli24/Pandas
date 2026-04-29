@@ -1,37 +1,50 @@
-# Beginner-Friendly Personal Learning Notes on Pandas
+# Pandas — Personal Learning Notes (Beginner-Friendly)
 
-This repository contains personal learning notes based on the Kaggle Learn Pandas course: [Kaggle Learn Pandas](https://www.kaggle.com/learn/pandas). This is a beginner-friendly repo, and it does not include the exercises from the course.
+Beginner-friendly personal learning notes while practicing **pandas**.
 
-## Lesson Modules
-1. Introduction to Pandas
-2. Data Manipulation with Pandas
-3. Data Cleaning and Preparation
-4. Data Visualization with Pandas
-5. Working with Time Series Data
-6. Advanced Pandas Techniques
+This repo is mainly based on Kaggle Learn’s Pandas course (tutorial lessons):
+https://www.kaggle.com/learn/pandas
 
-## Running Locally
-To run the notebooks locally, ensure you have Jupyter Notebook installed. You can use the following commands:
+> **Note:** I completed the tutorial lessons. **Kaggle course exercises are not included** in this repository.
 
+## Contents (notebooks in repo root)
+- `pandas.ipynb` — notes from **Kaggle Learn Pandas**.
+- `Pandas DataFrame UltraQuick Tutorial.ipynb` — notebook studied from Google/Colab (ML Crash Course / eng-edu):
+  https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/pandas_dataframe_ultraquick_tutorial.ipynb
+
+## Kaggle Learn — Topics Covered (lesson modules)
+- Creating, Reading and Writing
+- Indexing, Selecting & Assigning
+- Summary Functions and Maps
+- Grouping and Sorting
+- Data Types and Missing Values
+- Renaming and Combining
+
+## Run locally (Jupyter)
 ```bash
-pip install notebook
+git clone https://github.com/EmranAli24/Pandas.git
+cd Pandas
+pip install pandas numpy jupyter
 jupyter notebook
 ```
 
-Then, navigate to the directory containing the notebooks and start the Jupyter server.
-
-## Optional Google Colab Steps
-If you prefer using Google Colab, you can easily upload the notebooks there.
-
-1. Go to [Google Colab](https://colab.research.google.com/).
-2. Click on `File` > `Upload Notebook` to upload the notebooks from this repo.
-
-## Kaggle API Dataset Download Notes
-You can download datasets using Kaggle’s API. Make sure to set up your Kaggle API token. The command to download datasets is as follows:
-
+## Datasets (Kaggle API)
+Some examples use datasets hosted on Kaggle. To use those datasets locally:
+1. Install/configure the Kaggle API: https://github.com/Kaggle/kaggle-api
+2. Download a dataset:
 ```bash
-kaggle datasets download -d <dataset-name>
+kaggle datasets download -d <dataset-slug> -p data/ --unzip
 ```
+3. Update file paths inside the notebook if needed.
+
+## Open in Google Colab (optional)
+1. Go to https://colab.research.google.com/
+2. **File → Open notebook → GitHub**
+3. Paste: `https://github.com/EmranAli24/Pandas`
+
+## Credits
+- Kaggle Learn Pandas: https://www.kaggle.com/learn/pandas
+- Google Developers / Google LLC (eng-edu, ML Crash Course): UltraQuick tutorial notebook (contains Apache 2.0 license header)
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see `LICENSE`.
